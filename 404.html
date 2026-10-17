@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page not found</title>
+<script>
+  // These docs used to live under /symbolicregression/; older builds still link there.
+  const oldPrefix = "/symbolicregression/";
+  if (location.pathname.startsWith(oldPrefix)) {
+    location.replace("/" + location.pathname.slice(oldPrefix.length) + location.search + location.hash);
+  }
+</script>
+</head>
+<body>
+<p>Page not found. Go to the <a href="/stable/">SymbolicRegression.jl documentation</a>.</p>
+</body>
+</html>
